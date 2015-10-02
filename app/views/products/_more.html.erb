@@ -1,0 +1,17 @@
+<div class="col-xs-12 col-sm-3 side pull-righthttp: sidebar-offcanvas" id="sidebar" role="navigation">
+
+<div class="row-fluid">
+            <div class="thumbnails">
+              <div class="span3">
+              <legen>More Article</legen>
+              <hr>
+<% @products.each do |product| %>
+
+                   <p> <%= link_to product.title, product_path(product.id) %> </p>
+<% end %>
+                  </div>
+
+              </div>
+              </div>
+      </div>
+</div>

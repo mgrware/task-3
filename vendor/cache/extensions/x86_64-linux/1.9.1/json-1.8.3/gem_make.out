@@ -1,0 +1,10 @@
+/home/ghawk/.rvm/rubies/ruby-1.9.3-p551/bin/ruby -r ./siteconf20151001-29185-ljijkz.rb extconf.rb 
+creating Makefile
+
+make  clean
+
+make
+make: Nothing to be done for `all'.
+
+make  install
+installing default libraries

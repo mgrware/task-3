@@ -1,0 +1,32 @@
+<%= form_for @product do |f| %>
+<div class="control-group">
+<%= f.label :title, :class => "control-label" %>
+<div class="controls">
+<%= f.text_field :title, :placeholder => "Title" %>
+</div>
+</div>
+
+
+<%= @product.errors[:title].first unless @product.errors[:title].blank? %>
+<br/>
+<div class="control-group">
+<%= f.label :content, :class => "control-label" %>
+<div class="controls">
+<%= f.text_area :content, cols: 20, rows: 10, :class => "control-label" %>
+</div>
+</div>
+<%= @product.errors[:content].first unless @product.errors[:content].blank? %>
+<br/>
+<div class="control-group">
+<%= f.label :content, :class => "control-label" %>
+<div class="controls">
+ <%= f.file_field :image, :class => "control-label" %>
+<br/>
+
+<%= @product.errors[:image].first unless @product.errors[:image].blank? %>
+</div>
+</div>
+
+<%= f.submit :submit, :class => "btn btn-primary" %>
+
+<% end %>
